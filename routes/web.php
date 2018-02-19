@@ -24,4 +24,6 @@ Route::group(['prefix' => 'social-media', 'namespace' => 'Auth'], function(){
     Route::get('register/{provider}', 'SocialiteController@register');
     Route::get('registered/{provider}', 'SocialiteController@registered');
 });
+
 Route::resource('item','PostsController');
+Route::resource('posts','PostsController');
